@@ -1,0 +1,233 @@
+[
+  {
+    "id": "T00",
+    "teste": "Autenticação dos três perfis e dois utilizadores comuns",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V01"
+  },
+  {
+    "id": "T06a",
+    "teste": "Administrador cria categoria",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V02"
+  },
+  {
+    "id": "T06b",
+    "teste": "Administrador edita categoria existente",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V03"
+  },
+  {
+    "id": "T01a",
+    "teste": "Inicialização de Projetor sem imagem na sala 2",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V04"
+  },
+  {
+    "id": "T01b",
+    "teste": "Guardar Projetor sem imagem na sala 2",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V05"
+  },
+  {
+    "id": "T01a",
+    "teste": "Inicialização de Tomada sem energia no laboratório",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V06"
+  },
+  {
+    "id": "T01b",
+    "teste": "Guardar Tomada sem energia no laboratório",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V07"
+  },
+  {
+    "id": "T01a",
+    "teste": "Inicialização de Ligação Wi-Fi instável na biblioteca",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V08"
+  },
+  {
+    "id": "T01b",
+    "teste": "Guardar Ligação Wi-Fi instável na biblioteca",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V09"
+  },
+  {
+    "id": "T01c",
+    "teste": "Criador consulta o pedido depois de o guardar",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V10"
+  },
+  {
+    "id": "T02a",
+    "teste": "Segundo utilizador não consulta o pedido do primeiro pelo identificador",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V11"
+  },
+  {
+    "id": "T02b",
+    "teste": "Primeiro utilizador não consulta o pedido do segundo",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V12"
+  },
+  {
+    "id": "T02c",
+    "teste": "Lista do segundo utilizador contém apenas os seus pedidos",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V13"
+  },
+  {
+    "id": "T02d",
+    "teste": "Lista do primeiro utilizador contém apenas os seus pedidos",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V14"
+  },
+  {
+    "id": "T03",
+    "teste": "Técnico assume e coloca em tratamento o projetor",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V15"
+  },
+  {
+    "id": "T03",
+    "teste": "Técnico assume e coloca em tratamento o Wi-Fi",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V16"
+  },
+  {
+    "id": "T07a",
+    "teste": "Comentário do utilizador fica no pedido correto, com autor e data",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V17"
+  },
+  {
+    "id": "T07b",
+    "teste": "Técnico responsável acrescenta nota de resolução",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V18"
+  },
+  {
+    "id": "T04a",
+    "teste": "Técnico conclui o pedido",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V19"
+  },
+  {
+    "id": "T04b",
+    "teste": "Data de conclusão fica guardada na base de dados",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V20"
+  },
+  {
+    "id": "T04c",
+    "teste": "Pedido concluído não volta a ser assumido",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V21"
+  },
+  {
+    "id": "T04d",
+    "teste": "Microflow recusa alteração ao pedido concluído",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V22"
+  },
+  {
+    "id": "T04e",
+    "teste": "Título do pedido concluído mantém-se guardado sem alteração",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V23"
+  },
+  {
+    "id": "T05a",
+    "teste": "Utilizador não cria categorias pela API",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V24"
+  },
+  {
+    "id": "T05b",
+    "teste": "Utilizador não edita categorias pela API",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V25"
+  },
+  {
+    "id": "T05c",
+    "teste": "Categoria preserva o nome definido pelo administrador",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V26"
+  },
+  {
+    "id": "T05d",
+    "teste": "Utilizador não executa microflow de técnico",
+    "aprovado": true,
+    "observacao": "",
+    "verificacao": "V27"
+  },
+  {
+    "id": "T09",
+    "teste": "Dashboard do Administrador respeita o estado e as permissões",
+    "aprovado": true,
+    "observacao": "1, 1, 1",
+    "verificacao": "V28"
+  },
+  {
+    "id": "T09",
+    "teste": "Dashboard do Utilizador 1 respeita o estado e as permissões",
+    "aprovado": true,
+    "observacao": "0, 1, 1",
+    "verificacao": "V29"
+  },
+  {
+    "id": "T09",
+    "teste": "Dashboard do Utilizador 2 respeita o estado e as permissões",
+    "aprovado": true,
+    "observacao": "1, 0, 0",
+    "verificacao": "V30"
+  },
+  {
+    "id": "B01",
+    "teste": "Edição da categoria pelo browser ficou persistida",
+    "aprovado": true,
+    "observacao": "Confirmação na base de dados depois da ação no browser",
+    "verificacao": "V31"
+  },
+  {
+    "id": "B02",
+    "teste": "Comentário do técnico pelo browser ficou no pedido correto",
+    "aprovado": true,
+    "observacao": "Confirmação na base de dados depois da ação no browser",
+    "verificacao": "V32"
+  },
+  {
+    "id": "B03",
+    "teste": "Edição do segundo utilizador pelo browser ficou persistida",
+    "aprovado": true,
+    "observacao": "Confirmação na base de dados depois da ação no browser",
+    "verificacao": "V33"
+  }
+]

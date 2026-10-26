@@ -1,0 +1,53 @@
+{
+  "data": "2026-10-26",
+  "ambiente": "Cópia isolada local do CampusFix",
+  "verificacoes": [
+    {
+      "perfil": "Administrador",
+      "paginas": [
+        "Dashboard",
+        "Os Meus Pedidos",
+        "Novo Pedido e Cancel",
+        "Gestão de Pedidos",
+        "Categorias e Edit Categoria",
+        "Utilizadores"
+      ],
+      "resultado": "Sem erros de navegação ou permissões nas páginas percorridas"
+    },
+    {
+      "perfil": "Técnico",
+      "paginas": [
+        "Dashboard",
+        "Os Meus Pedidos",
+        "Novo Pedido e Cancel",
+        "Gestão de Pedidos",
+        "Detalhe de pedido atribuído",
+        "Novo Comentário e Guardar"
+      ],
+      "resultado": "Sem erros de navegação ou permissões nas páginas percorridas; pesquisa Wi-Fi devolveu um pedido"
+    },
+    {
+      "perfil": "Utilizador demo_user",
+      "paginas": [
+        "Dashboard",
+        "Novo Pedido e Cancel",
+        "Os Meus Pedidos",
+        "Detalhe de pedido concluído"
+      ],
+      "resultado": "Lista com dois pedidos próprios; sem menus técnicos ou administrativos; campos do pedido concluído desativados; Save, Assumir Pedido e Concluir Pedido ausentes"
+    },
+    {
+      "perfil": "Utilizador demo_utilizador2",
+      "paginas": [
+        "Dashboard",
+        "Os Meus Pedidos",
+        "Detalhe do pedido próprio e Save"
+      ],
+      "resultado": "Lista com apenas um pedido próprio; sem menus técnicos ou administrativos; edição do pedido aberto guardada"
+    }
+  ],
+  "avisosEsperados": [
+    "Novo Comentário num pedido concluído apresenta um aviso e não cria o comentário."
+  ],
+  "limites": "Foram percorridas as páginas e ações indicadas; não se trata de uma verificação exaustiva de todas as combinações de botões e estados."
+}

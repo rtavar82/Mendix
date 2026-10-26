@@ -1,0 +1,4 @@
+8501eb5 | 2026-10-26 | Completar gestão de pedidos, permissões e dashboard e melhorar formulários
+8bef208 | 2026-10-19 | Implementar Domain Model, microflows principais, páginas de listagem, formulários e detalhe de pedidos com comentários.
+5e5bbe5 | 2026-10-12 | microflow
+757cd8d | 2026-10-07 | Initial app upload.

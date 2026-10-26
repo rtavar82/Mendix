@@ -1,5 +1,6 @@
 /*.launch
-/documentacao
+/documentacao/*
+!/documentacao/entrega/
 /deployment/
 /packages/
 /releases/
