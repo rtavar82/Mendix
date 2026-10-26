@@ -1,2 +1,118 @@
 @import '../../../theme/web/custom-variables';
 
+
+// CampusFix: request creation and detail forms only.
+// The input IDs identify these pages without changing the Mendix model.
+.mx-dataview.mx-name-dataView6:has([id^="p.MyFirstModule.Pedido_NewEdit."]),
+.mx-dataview.mx-name-dataView6:has([id^="p.MyFirstModule.Pedido_Detail."]) {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto !important;
+    align-self: flex-start;
+    width: calc(100% - 48px);
+    max-width: 1040px;
+    height: auto !important;
+    min-height: 0;
+    margin: 24px auto;
+    border: 1px solid #e1e6ef;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 3px 14px rgba(27, 45, 82, .06);
+
+    > .mx-dataview-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 18px 24px;
+        flex: 0 0 auto;
+        height: auto !important;
+        overflow: visible !important;
+        max-height: none !important;
+        padding: 24px;
+
+        > * { min-width: 0; }
+        > .form-group { margin-bottom: 0; }
+        > .mx-name-textBox1,
+        > .mx-name-textBox2,
+        > .mx-name-textArea1,
+        > .mx-listview,
+        > .mx-name-actionButton5 { grid-column: 1 / -1; }
+        > .mx-name-actionButton5 { justify-self: start; }
+    }
+
+    .control-label {
+        margin-bottom: 7px;
+        color: #344054;
+        font-weight: 600;
+    }
+    .form-control {
+        min-height: 42px;
+        border-radius: 6px;
+    }
+    textarea.form-control {
+        min-height: 124px;
+        resize: vertical;
+    }
+    .widget-combobox { width: 100%; max-width: 100%; }
+    .mx-radiobuttons {
+        display: block;
+    }
+    .mx-radiogroup {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        min-height: 42px;
+        align-items: center;
+
+        .radio { margin: 0; white-space: nowrap; }
+    }
+    .mx-listview {
+        margin: 0;
+        min-height: 0;
+    }
+    > .mx-dataview-controls {
+        display: flex;
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 18px 24px;
+        border-top: 1px solid #e8ecf3;
+        background: #fafbfe;
+        border-radius: 0 0 12px 12px;
+
+        .btn {
+            min-height: 40px;
+            margin: 0;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .mx-dataview.mx-name-dataView6:has([id^="p.MyFirstModule.Pedido_NewEdit."]),
+    .mx-dataview.mx-name-dataView6:has([id^="p.MyFirstModule.Pedido_Detail."]) {
+        width: calc(100% - 24px);
+        margin: 12px auto;
+
+        > .mx-dataview-content {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 16px;
+            padding: 18px;
+        }
+        > .mx-dataview-controls {
+            padding: 16px 18px;
+            gap: 8px;
+        }
+    }
+}
+
+// Let the page scroll naturally instead of scrolling inside the form card.
+.mx-placeholder:has(> .mx-name-dataView6 [id^="p.MyFirstModule.Pedido_NewEdit."]),
+.mx-placeholder:has(> .mx-name-dataView6 [id^="p.MyFirstModule.Pedido_Detail."]) {
+    display: block;
+    overflow-y: auto;
+}
